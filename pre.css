@@ -1,0 +1,165 @@
+/* Styles for small screens (up to 360px) */
+body {
+  width: 360px;
+  height: 669px;
+  margin: 0 auto;
+}
+
+/* Styles for big screens (starting from 768px) */
+@media screen and (min-width: 768px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+p{ margin: 0;
+ background-color: greenyellow;
+
+
+}
+#ab{margin: 0;
+    margin-left:10px;
+}
+#button-container{
+    display: inline-block;
+   margin-left: 20px;
+    margin: 0;
+    right :0;
+}
+#score{
+    
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+
+#bg-i{
+    height: 100%;
+    width:100%;
+    position: fixed;
+    padding:400px;
+  background-image: url(/background.jpg);
+    background-repeat: repeat-y;
+  animation-name:mbg;
+  animation-duration:5s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+   
+}
+
+@keyframes mbg{
+    0% {background-position: 0 0;}
+    100%{background-position:0 100%;}
+}
+
+
+
+    div{
+       display: inline-block;
+        
+    }
+   .imycar{
+       width: 60px;
+   }
+   .enemycar{width: 60px;}
+    #dmycar{
+        margin-top: 500px;
+        position: absolute;
+        bottom: 0px;
+        right:150px;
+        
+    }
+    #redcar{
+       
+        margin-top: 0;
+        top:0px;
+        position: relative;
+        left:70px;
+        animation-name: redcar;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    #whitecar{
+        margin-top: 0;
+        position: relative;
+        left:30px;
+        animation-name: whitecar;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;}
+    
+       #blackcar{
+        margin-top: 0;
+        position: relative;
+        left:40px;
+        animation-name: blackcar;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;}
+        
+           #yellowcar{
+        margin-top: 0;
+        position: relative;
+        left:70px;
+        animation-name: yellowcar;
+        animation-duration: 7.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;}
+ 
+
+
+    
+    
+   
+  
+   @keyframes redcar {
+        0%{top :0vh;}
+        100%{top :100vh;}
+    }
+        @keyframes blackcar {
+        0%{top :0vh;}
+        100%{top :100vh;}
+    }
+        @keyframes whitecar {
+        0%{top :0vh;}
+        100%{top :100vh;}
+    }
+        @keyframes yellowcar {
+        0%{top :0vh;}
+        100%{top :100vh;}
+    }
+    
+
+  
+    #dmycar {
+    margin-top: 500px;
+    position: absolute;
+    bottom: 50px;
+    right: 150px;
+}
+    #b1{
+        width: 90px;
+        height: 60px;
+        position: absolute;
+    bottom: 30px;
+    left: 40px;
+    background-color: transparent;
+    color: green;
+    font-size: 40px;
+    padding-left: 10px;
+    }
+    #b2{width: 90px;
+        height: 60px;
+        position: absolute;
+    bottom: 30px;
+    right: 40px;
+        background-color: transparent;
+        color: green;
+        font-size: 40px;
+        padding-left: 10px; 
+    }
+
+
+

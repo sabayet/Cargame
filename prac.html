@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>car game</title>
+   
+    <link rel="stylesheet" href="pre.css">
+
+   
+</head>
+<body>
+  
+                 
+
+<p class="ps">
+    
+   <span id = "life"></span>
+      <button id="ab" onclick="playbAudio()" id="mu">🎵</button>
+       <span id="button-container"></span>
+    <span id="score"></span>
+
+ 
+  
+     
+     
+   </p>
+      
+    
+  
+  
+    <div id="bg-i"></div>
+  
+  
+  <div id="dmycar"><img src="mycar.png" class="imycar">
+  
+  
+</div>
+  
+  <div class="enemycar-container">
+    <div id="whitecar"><img class="enemycar" src="white.png"></div>
+    <div id="blackcar"><img class="enemycar" src="black.png"></div> 
+    <div id="yellowcar"><img class="enemycar" src="yellow.png"></div>
+    <div id="redcar"><img class="enemycar" src="red.png"></div>
+  </div>
+  
+  <button id="b1" onclick="moveCar('left')">⬅️</button>
+  <button id="b2" onclick="moveCar('right')">➡️</button>
+
+<audio id="bAudio" loop>
+  <source src="background.mp3" type="audio/mpeg">
+  
+</audio>
+
+
+<audio id="lAudio">
+  <source src="life.wav" type="audio/mpeg">
+  
+</audio>
+
+<audio id="oAudio">
+  <source src="gameOver.wav" type="audio/mpeg">
+  
+</audio>
+
+
+<script>
+var oaudio = document.getElementById("oAudio");
+  
+  function playoAudio() {
+    oaudio.play();
+    oaudio.volume = 1;
+  }
+
+  var baudio = document.getElementById("bAudio");
+  
+  function playbAudio() {
+    baudio.play();
+    baudio.volume = 0.3;
+  }
+  
+  
+  
+  
+  
+  var laudio = document.getElementById("lAudio");
+  
+  function playlAudio() {
+    laudio.play();
+    laudio.volume = 1;
+  }
+</script>
+
+  
+ <script src='workF.js'></script>
+
+</body>
+
+
+
+</html>
